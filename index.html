@@ -19,9 +19,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./images/bus-logo.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="box-border">
     <!-- header section -->
     <header class="container mx-auto px-6 mt-5 lg:mt-8 raleway">
         <div class="navbar flex justify-between">
@@ -35,7 +36,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-[#F85559] rounded-box w-52">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-[#1DD100] rounded-box w-52">
                         <li><a class="text-white text-[16px]" href="">Home</a></li>
                         <li><a class="text-white text-[16px]" href="">About</a></li>
                         <li><a class="text-white text-[16px]" href="">Destination</a></li>
@@ -49,21 +50,21 @@
                 </div>
             </div>
             <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-0 lg:px-1 flex items-center gap-0 lg:gap-4">
-                    <li><a class="text-[#030712B3] text-[16px]" href="">Home</a></li>
-                    <li><a class="text-[#030712B3] text-[16px] href="">About</a></li>
-                    <li><a class=" text-[#030712B3] text-[16px] href="">Destination</a></li>
-                    <li><a class="text-[#030712B3] text-[16px] href="">Search</a></li>
-                    
+                <ul class="menu menu-horizontal px-0 lg:px-1 flex items-center gap-0 lg:gap-4 raleway font-medium">
+                    <li><a class="text-[##030712B3] text-[18px]" href="">Home</a></li>
+                    <li><a class="text-[##030712B3] text-[18px]" href="">About</a></li>
+                    <li><a class=" text-[##030712B3] text-[18px]" href="">Destination</a></li>
+                    <li><a class="text-[##030712B3] text-[18px]" href="">Search</a></li>
+
                 </ul>
             </div>
             <div class=" flex gap-6">
-                            <a class="hidden lg:flex" href=""><img src="./icons/search.svg" alt=""></a>
-                            <button
-                                class="text-[#1DD100] flex rounded-xl justify-center items-center gap-3 border-[#1DD100] border font-bold text-[15px] md:text-[16px] lg:text-xl px-2 py-1 md:px-5 md:py-3 lg:px-6 lg:py-3 bg-[#1DD1001A]">
-                                <p>Bus</p>
-                                <img class="border-2" src="./images/bus-icon.png" alt="">
-                            </button>
+                <a class="hidden lg:flex" href=""><img src="./icons/search.svg" alt=""></a>
+                <button
+                    class="text-[#1DD100] flex rounded-xl justify-center items-center gap-3 border-[#1DD100] border font-bold text-[15px] md:text-[16px] lg:text-xl px-2 py-1 md:px-5 md:py-3 lg:px-6 lg:py-3 bg-[#1DD1001A]">
+                    <p>Bus</p>
+                    <img class="border-2" src="./images/bus-icon.png" alt="">
+                </button>
             </div>
         </div>
     </header>
@@ -74,8 +75,8 @@
             <div
                 class="bg-[url('/images/banner.png')] bg-no-repeat bg-cover h-[550px] bg-center rounded-3xl flex flex-col justify-center items-center text-center px-3 lg:px-0">
                 <div class="space-y-5">
-                    <h1 class="text-white text-4xl lg:text-6xl font-extrabold raleway">End-to-End Travel with <span
-                            class="block text-[#1DD100]">PH Paribahan</span></h1>
+                    <h1 class="text-white text-4xl lg:text-6xl font-extrabold raleway">End-to-End Travel
+                        with <span class="block text-[#1DD100]">PH Paribahan</span></h1>
                     <p class="text-white inter text-[18px] lg:text-xl max-w-[680px]">Yes, you can run unit tests and
                         view the results
                         directly
