@@ -6,7 +6,11 @@
     font-family: "Raleway", sans-serif;
 }
 
-.info-li{
+.info-li {
     display: flex;
     justify-content: space-between;
+}
+
+.body{
+    overflow: hidden;
 }
