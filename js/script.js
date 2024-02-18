@@ -71,6 +71,7 @@ for (let seat of seats) {
 
             })
             continueBtn.addEventListener('click', function () {
+                location.reload();
                 modal.classList.add('hidden');
                 body.classList.remove('body');
             })
