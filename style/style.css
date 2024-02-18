@@ -5,3 +5,8 @@
 .raleway {
     font-family: "Raleway", sans-serif;
 }
+
+.info-li{
+    display: flex;
+    justify-content: space-between;
+}
