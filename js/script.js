@@ -1,6 +1,7 @@
 const seats = document.getElementsByClassName('seats');
 let count = 1;
-let totalPrice = 0;
+let reduce = 0;
+let totalPrice = 550;
 for (let seat of seats) {
     seat.addEventListener('click', function () {
         // seat count
@@ -30,12 +31,22 @@ for (let seat of seats) {
         const totalPrice = document.getElementById('total-price');
         const getText = totalPrice.innerText
         const convertTotalPrice = parseInt(getText);
+        totalPrice.innerText = convertTotalPrice + 550;
 
 
+        // grand total
+        const grandTotal = document.getElementById('grand-total');
+        grandTotal.innerText = totalPrice.innerText;
 
+        //reduce available-seat
+        const availableSeat = document.getElementById('available-seat').innerText;
+        const convertSeat = parseInt(availableSeat);
+        const reduceValue = convertSeat - 1;
+        document.getElementById('available-seat').innerText = reduceValue
 
-
-
+        // set background seat
+        seatId.style.background = '#1DD100';
+        seatId.style.color = 'white';
 
 
 
