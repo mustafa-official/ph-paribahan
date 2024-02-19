@@ -82,21 +82,26 @@ for (let seat of seats) {
             const couponCode = document.getElementById('coupon-code');
             const convertGrandTotal = parseInt(grandTotal.innerText);
             const inputApply = document.getElementById('input-apply');
-            couponApply.addEventListener('click', function () {
-                if (couponCode.value === 'NEW15') {
-                    const discountTotal = convertGrandTotal * 0.15;
-                    grandTotal.innerText = convertGrandTotal - discountTotal;
-                    inputApply.classList.add('hidden');
+            if (btnCount === 4) {
+                couponApply.addEventListener('click', function () {
 
-                } else if (couponCode.value === 'Couple 20') {
-                    const discountTotal = convertGrandTotal * 0.20;
-                    grandTotal.innerText = convertGrandTotal - discountTotal;
-                    inputApply.classList.add('hidden');
-                } else {
-                    alert('Invalid Coupon Code');
-                }
+                    if (couponCode.value === 'NEW15') {
+                        const discountTotal = convertGrandTotal * 0.15;
+                        grandTotal.innerText = parseInt(convertGrandTotal - discountTotal);
+                        inputApply.classList.add('hidden');
 
-            })
+                    } else if (couponCode.value === 'Couple 20') {
+                        const discountTotal = convertGrandTotal * 0.20;
+                        grandTotal.innerText = parseInt(convertGrandTotal - discountTotal);
+                        inputApply.classList.add('hidden');
+                    } else {
+                        alert('Invalid Coupon Code');
+                    }
+
+                })
+            } 
+        } else {
+            alert("You can't select more than 4 seat")
         }
 
     })

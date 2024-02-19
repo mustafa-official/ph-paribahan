@@ -73,7 +73,7 @@
         <!-- banner section -->
         <section class="relative container mx-auto px-6 mt-5 lg:mt-8">
             <div
-                class="bg-[url('./images/banner.png')] bg-no-repeat bg-cover h-[550px] bg-center rounded-3xl flex flex-col justify-center items-center text-center px-3 lg:px-0">
+                class="bg-[url('./images/banner.png')] bg-no-repeat bg-cover h-auto lg:h-[550px] bg-center rounded-3xl flex flex-col justify-center items-center text-center px-6 py-8 lg:py-0 lg:px-0">
                 <div class="space-y-5">
                     <h1 class="text-white text-4xl lg:text-6xl font-extrabold raleway">End-to-End Travel
                         with <span class="block text-[#1DD100]">PH Paribahan</span></h1>
@@ -92,22 +92,26 @@
             </div>
 
             <!-- 500k section -->
-            <div class="flex-col lg:flex-row lg:flex justify-center gap-5 top-[90%] left-[20%]  lg:absolute">
-                <div class="flex items-center justify-center gap-2 rounded-xl border-b-2 border-[#1DD100] p-4 bg-white">
+            <div
+                class="flex-col lg:flex-row lg:flex justify-center gap-5 lg:top-[98%] lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%] lg:absolute">
+                <div
+                    class="flex items-center justify-center lg:w-[300px] gap-2 rounded-xl border-b-2 border-[#1DD100] bg-white py-6">
                     <img src="./images/people.png" alt="">
                     <div>
                         <h2 class="text-[#030712] inter text-2xl lg:text-3xl font-bold">500K+</h2>
                         <p class="inter text-[#03071299] text-xl">Registered users</p>
                     </div>
                 </div>
-                <div class="flex items-center justify-center gap-2 rounded-xl border-b-2 border-[#1DD100] p-4 bg-white">
+                <div
+                    class="flex items-center justify-center lg:w-[300px] gap-2 rounded-xl border-b-2 border-[#1DD100] bg-white py-6">
                     <img src="./images/ticket-cupon.png" alt="">
                     <div>
                         <h2 class="text-[#030712] inter text-2xl lg:text-3xl font-bold">1.7 lacks</h2>
                         <p class="inter text-[#03071299] text-xl">Tickets sold</p>
                     </div>
                 </div>
-                <div class="flex items-center justify-center gap-2 rounded-xl border-b-2 border-[#1DD100] p-4 bg-white">
+                <div
+                    class="flex items-center justify-center lg:w-[300px] gap-2 rounded-xl border-b-2 border-[#1DD100] bg-white py-6">
                     <img src="./images/stoppage.png" alt="">
                     <div>
                         <h2 class="text-[#030712] inter text-2xl lg:text-3xl font-bold">80K+</h2>
@@ -260,8 +264,8 @@
                             <!-- 1 -->
 
                             <div class="text-[#03071280] inter text-[18px] space-y-8">
-                                <button id="A1" class="seats bg-[#F7F8F8]  px-6 py-1 rounded-md block">A1</button>
-                                <button id="B1" class="seats bg-[#F7F8F8]  px-6 py-1 rounded-md block">B1</button>
+                                <button id="A1" class="seats bg-[#e2e2e2]  px-6 py-1 rounded-md block">A1</button>
+                                <button id="B1" class="seats bg-[#e2e2e2]  px-6 py-1 rounded-md block">B1</button>
 
 
                             </div>
@@ -269,8 +273,8 @@
                             <!-- 2 -->
 
                             <div class="text-[#03071280] inter text-[18px] space-y-8">
-                                <button id="A2" class="seats bg-[#F7F8F8] px-6 py-1 rounded-md block">A2</button>
-                                <button id="B2" class="seats bg-[#F7F8F8] px-6 py-1 rounded-md block">B2</button>
+                                <button id="A2" class="seats bg-[#e2e2e2] px-6 py-1 rounded-md block">A2</button>
+                                <button id="B2" class="seats bg-[#e2e2e2] px-6 py-1 rounded-md block">B2</button>
 
 
 
@@ -279,8 +283,8 @@
                             <!-- 3 -->
 
                             <div class="text-[#03071280] inter text-[18px] space-y-8">
-                                <button id="A3" class="seats bg-[#F7F8F8] px-6 py-1 rounded-md block">A3</button>
-                                <button id="B3" class="seats bg-[#F7F8F8] px-6 py-1 rounded-md block">B3</button>
+                                <button id="A3" class="seats bg-[#e2e2e2] px-6 py-1 rounded-md block">A3</button>
+                                <button id="B3" class="seats bg-[#e2e2e2] px-6 py-1 rounded-md block">B3</button>
 
 
                             </div>
@@ -288,8 +292,8 @@
                             <!-- 4 -->
 
                             <div class="text-[#03071280] inter text-[18px] space-y-8">
-                                <button id="A4" class="seats bg-[#F7F8F8] px-6 py-1 rounded-md block">A4</button>
-                                <button id="B4" class="seats bg-[#F7F8F8] px-6 py-1 rounded-md block">B4</button>
+                                <button id="A4" class="seats bg-[#e2e2e2] px-6 py-1 rounded-md block">A4</button>
+                                <button id="B4" class="seats bg-[#e2e2e2] px-6 py-1 rounded-md block">B4</button>
 
 
                             </div>
@@ -351,7 +355,7 @@
                 <div id="modal"
                     class=" top-[70%] left-[50%] absolute   translate-x-[-50%] translate-y-[-50%] h-screen hidden">
                     <div
-                        class="flex flex-col bg-white p-8 rounded-xl border drop-shadow-2xl border-[#27ae5fc9] justify-center items-center md:scale-[0.6] scale-[0.4] lg:scale-[0.8] gap-4 text-center w-[600px] lg:p-12">
+                        class="flex flex-col bg-white p-8 rounded-xl border drop-shadow-2xl border-[#27ae5fc9] justify-center items-center scale-[0.7] lg:scale-[0.8] gap-4 text-center w-[400px] h-[550px] lg:h-auto lg:w-[600px] lg:p-12">
 
                         <div><img src="./images/success.png" alt=""></div>
                         <h2 class="font-bold text-[#27AE60] text-2xl">SUCCESS</h2>
