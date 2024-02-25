@@ -228,7 +228,7 @@
 
             <!-- seat information section-->
 
-            <div class="relative" id="seat-information">
+            <div class="" id="seat-information">
                 <div class="grid grid-cols-1 lg:grid-cols-2 bg-white mt-6 rounded-xl">
 
                     <!-- column-one -->
@@ -351,32 +351,33 @@
                     </div>
                 </div>
 
-                <!-- modal -->
-                <div id="modal"
-                    class=" top-[70%] left-[50%] absolute   translate-x-[-50%] translate-y-[-50%] h-screen hidden">
-                    <div
-                        class="flex flex-col bg-white p-8 rounded-xl border drop-shadow-2xl border-[#27ae5fc9] justify-center items-center scale-[0.7] lg:scale-[0.8] gap-4 text-center w-[400px] h-[550px] lg:h-auto lg:w-[600px] lg:p-12">
-
-                        <div><img src="./images/success.png" alt=""></div>
-                        <h2 class="font-bold text-[#27AE60] text-2xl">SUCCESS</h2>
-                        <p class="font-medium text-[#4A4A4A] text-xl">Thank you for Booking Our Bus Seats. <br> We are
-                            working hard to
-                            find the
-                            best service
-                            and deals for you.</p>
-                        <p class="font-normal text-[#4A4A4A] text-xl">Shortly you will find a confirmation in your
-                            email.
-                        </p>
-                        <button id="continue"
-                            class="bg-[#27AE60] text-white px-8 lg:px-20 py-3 text-ellipsis text-xl font-semibold rounded-3xl">Continue</button>
-                    </div>
-                </div>
             </div>
 
 
 
 
         </section>
+
+        <!-- modal -->
+        <div id="modal"
+            class="top-[50%] w-full h-full fixed flex hidden translate-x-[-50%] backdrop-blur-sm translate-y-[-50%] left-[50%] justify-center items-center">
+            <div
+                class="flex flex-col bg-white p-8 rounded-xl border drop-shadow-2xl border-[#27ae5fc9] justify-center items-center scale-[0.7] lg:scale-[0.8] gap-4 text-center w-[400px] h-[550px] lg:h-auto lg:w-[600px] lg:p-12">
+
+                <div><img src="./images/success.png" alt=""></div>
+                <h2 class="font-bold text-[#27AE60] text-2xl">SUCCESS</h2>
+                <p class="font-medium text-[#4A4A4A] text-xl">Thank you for Booking Our Bus Seats. <br> We are
+                    working hard to
+                    find the
+                    best service
+                    and deals for you.</p>
+                <p class="font-normal text-[#4A4A4A] text-xl">Shortly you will find a confirmation in your
+                    email.
+                </p>
+                <button id="continue"
+                    class="bg-[#27AE60] text-white px-8 lg:px-20 py-3 text-ellipsis text-xl font-semibold rounded-3xl">Continue</button>
+            </div>
+        </div>
     </main>
     <!-- footer section -->
 
